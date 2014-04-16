@@ -1,0 +1,213 @@
+// ------------------------------------------------------------------
+// Sidebar Widget
+// ------------------------------------------------------------------
+.sidebar-widget,
+.shop-cat-lists,
+.share-tools {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+// ------------------------------------------------------------------
+// Social Links Widget For Footer
+// ------------------------------------------------------------------
+.first-footer-widget-area {
+	.sidebar-widget {
+		border: 1px solid #E3E3E3;
+		padding: 20px 10px;
+
+		h3 {
+			float: left;
+			margin: 0 5px 0 0;
+			line-height: 40px;
+		}
+	}
+	input[type="text"] {
+		border: 1px solid #E3E3E3;
+	}
+}
+.second-footer-widget-area {
+	padding: 30px 0;
+}
+.third-footer-area {
+	.container {
+		border-top: 1px solid #D0D0D0;
+	}
+}
+.social-widget {
+	padding: 11px 0;
+}
+.subscribe_widget{
+	display: inline-block;
+ 	// border: 1px solid #E3E3E3;
+ 	// padding: 0 10px 20px 10px;
+ 	width: 100%;
+	
+	span {
+		display: inline-block;
+	} 	
+ 	form {
+		display: inline-block;
+		width: 65%;
+		float: right;
+		position: relative;
+		margin: 10px 0 0;
+	}
+}
+.newsletter {
+	display: inline-block;
+	width: 30%;
+	padding-right: 10px;
+	margin: 0;
+	float: left;
+}
+.subscribe_widget .subscribe_email {
+	padding-right: 110px;
+	padding-left: 30px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 45px;
+	-moz-border-radius: 45px;
+	-webkit-border-radius: 45px;
+}
+
+.subscribe_widget{
+	
+	.subscribe_email {
+		position: absolute;
+		right: 0;
+		top: 1px;
+		left: auto;
+		bottom: auto;
+		height: 43px;
+		line-height: 43px;
+		width: 100%;
+	}
+}
+.subscribe_widget .widget-title {
+	margin-bottom: 0;
+	font-family: "Source Sans Pro";
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #505050;
+	letter-spacing: -0.5px;
+}
+html .woocommerce .subscribe_widget .button,
+html .woocommerce-page .subscribe_widget .button {
+	padding: 0;
+	position: absolute;
+	right: 20px;
+	top: 1px;
+	left: auto;
+	bottom: auto;
+	border: 0;
+	height: 43px;
+	line-height: 43px;
+	background: none;
+	filter: none;
+
+	&:hover {
+		background: none;
+		filter: none;
+	}
+
+}
+.subscribe_widget .button span {
+	color: #505050;
+	text-transform: uppercase;
+
+	&:hover {
+		color: #65AA00;
+	}
+}
+
+.shipping-service,
+.payment-options {
+	h3 {
+		float: left;
+	}
+	ul {
+		float: right;
+		line-height: 5em;
+		margin-left: 0;
+	}
+}
+.social-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	li {
+		float: left;
+		margin-right: 10px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			display: inline-block;
+			font-size: 0px;
+			cursor: pointer;
+			margin: 0;
+			width: 36px;
+			height: 36px;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			z-index: 1;
+			color: #666;
+
+
+			&:hover {
+				text-decoration: none;
+			}
+			&:hover::before {
+				background: #000;
+			}
+			&::before {
+				display: block;
+				font-family: 'FontAwesome';
+				font-size: 20px;
+				padding: 10px;
+				color: #FFF;
+
+
+			}
+		}
+
+		&.facebook {
+			a {
+				background: #004A73;
+
+				&::before {
+					content: "\f09a";
+				}
+			}
+		}
+
+		&.twitter {
+			a {
+				background: #00AEEF;
+				&::before {
+					
+					content: "\f099";
+				}
+			}
+		}
+
+		&.rss {
+			a {
+				background: #EF9200;
+				&::before {
+					content: "\f09e";
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,312 @@
+// /*** ESSENTIAL STYLES ***/
+// .sf-menu {
+//   position: relative;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+// .sf-menu ul {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+// .sf-menu .sf-mega {
+//   position: absolute;
+//   display: none;
+//   top: 0;
+//   left: 100%;
+//   z-index: 99;
+// }
+// .sf-menu > li {
+//   float: left;
+// }
+// .sf-menu li:hover > .sf-mega,
+// .sf-menu li.sfHover > .sf-mega {
+//   display: block;
+// }
+// .sf-menu > li:hover > a {
+//   color: #FFF;
+// }
+// .sf-menu > li > a {
+//   display: block;
+//   position: relative;
+// }
+
+
+// /*** DEMO SKIN ***/
+// .sf-menu {
+//   float: left;
+//   margin-bottom: 1em;
+//   width: 100%;
+// }
+// .sf-menu .sf-mega {
+//     border: 1px solid #D0D0D0;
+//   box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+//   width: 66em; /* allow long menu items to determine submenu width */
+// }
+// .sf-menu > li > a {
+//   border-left: 1px solid #fff;
+//   border-top: 1px solid #dFeEFF; /* fallback colour must use full shorthand */
+//   border-top: 1px solid rgba(255,255,255,.5);
+//   padding: .75em 1em;
+//   text-decoration: none;
+//   zoom: 1; /* IE7 */
+//   color: #202020;
+// }
+// .sf-menu > li {
+//   // background: #BDD2FF;
+//   -webkit-transition: background .2s;
+//   transition: background .2s;
+// }
+// .sf-menu > li:hover,
+// .sf-menu > li.sfHover {
+//   background: #282828;
+//   background: -moz-linear-gradient(top, #313131 0%, #474747 100%);
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#313131), color-stop(100%,#474747));
+//   // background: -webkit-linear-gradient(top, #FFF 0%,#E9E9E9 100%,#E9E9E9 100%);
+//   // background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(233,233,233,1) 100%,rgba(233,233,233,1) 100%);
+//   // background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(233,233,233,1) 100%,rgba(233,233,233,1) 100%);
+//   // background: linear-gradient(to bottom, #FFF 0%,#E9E9E9 100%,#E9E9E9 100%);
+//   // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9e9e9',GradientType=0 );
+//   /* only transition out, not in */
+//   -webkit-transition: none;
+//   transition: none;
+// }
+
+// /*** mega menu dropdown ***/
+// .sf-mega {
+//   background-color: #FFF;
+//   padding: 1em;
+//   box-sizing: border-box;
+//   width: 100%;
+// }
+
+// .sf-mega h2 {
+//   font-size: .9em;
+//   margin: .5em 0;
+//   color: #202020;
+//   font-weight: bold;
+//   text-transform: uppercase;
+// }
+// .sf-mega-section {
+//   float: left;
+//   width: 8em; /* optional */
+//   padding: 0 1em 1em 0;
+//   margin-right: 1em;
+//   border-right: 1px solid #D0D0D0;
+// }
+// .sf-mega-section a {
+//     color: #202020;
+//     display: inline-block;
+//     padding: 7px 0;
+// }
+
+// /*** arrows (for all except IE7) **/
+// .sf-arrows .sf-with-ul {
+//   padding-right: 2.5em;
+//   *padding-right: 1em; /* no CSS arrows for IE7 (lack pseudo-elements) */
+// }
+// /* styling for both css and generated arrows */
+// .sf-arrows .sf-with-ul:after {
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   right: 1em;
+//   margin-top: -3px;
+//   height: 0;
+//   width: 0;
+//   /* order of following 3 rules important for fallbacks to work */
+//   border: 5px solid transparent;
+//   border-top-color: #dFeEFF; /* edit this to suit design (no rgba in IE8) */
+//   border-top-color: rgba(255,255,255,.5);
+// }
+// .sf-arrows > li > .sf-with-ul:focus:after,
+// .sf-arrows > li:hover > .sf-with-ul:after,
+// .sf-arrows > .sfHover > .sf-with-ul:after {
+//   border-top-color: #202020; /* IE8 fallback colour */
+// }
+
+
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sf-menu .sf-mega {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    z-index: 99;
+}
+
+.sf-menu > li {
+    float: left;
+}
+
+.sf-menu li:hover > .sf-mega,
+.sf-menu li.sfHover > .sf-mega {
+    display: block;
+}
+
+.sf-menu > li > a {
+    display: block;
+    position: relative;
+}
+
+
+/*** DEMO SKIN ***/
+.sf-menu {
+    float: left;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.sf-menu .sf-mega {
+    border: 1px solid #D0D0D0;
+    box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+    width: 100%;
+ /* allow long menu items to determine submenu width */
+}
+
+.sf-menu > li > a {
+    border-left: 1px solid #fff;
+    border-top: 1px solid #dFeEFF;
+ /* fallback colour must use full shorthand */
+    border-top: 1px solid rgba(255,255,255,.5);
+    padding: .75em 1em;
+    text-decoration: none;
+    zoom: 1;
+ /* IE7 */
+    color: #202020;
+
+    &:hover {
+        color: #fff;
+    }
+}
+
+.sf-menu > li {
+    color: #202020;
+    background: #FFF;
+    background: -moz-linear-gradient(top, #ffffff 0%, #e9e9e9 100%, #e9e9e9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(100%, #E9E9E9), color-stop(100%, #E9E9E9));
+    background: -webkit-linear-gradient(top, #FFF 0%, #E9E9E9 100%, #E9E9E9 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #e9e9e9 100%, #e9e9e9 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #e9e9e9 100%, #e9e9e9 100%);
+    background: linear-gradient(to bottom, #FFF 0%, #E9E9E9 100%, #E9E9E9 100%);
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+    -webkit-transition: background .2s;
+    transition: background .2s;
+}
+
+.sf-menu > li:hover,
+.sf-menu > li.sfHover {
+    background: #282828;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#313131), to(#474747));
+    background: -webkit-linear-gradient(#313131 0%, #474747 100%);
+    background: -moz-linear-gradient(#313131 0%, #474747 100%);
+    background: -o-linear-gradient(#313131 0%, #474747 100%);
+    background: linear-gradient(#313131 0%, #474747 100%);
+
+    /* only transition out, not in */
+    -webkit-transition: none;
+    transition: none;
+}
+
+/*** mega menu dropdown ***/
+.sf-mega {
+    background-color: #fff;
+    // padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.sf-mega-section {
+    float: left;
+    width: 25%;
+ /* optional */
+    // padding: 0 1em 1em 0;
+    // margin-right: 1em;
+    border-right: 1px solid #D0D0D0;
+}
+
+
+/*** arrows (for all except IE7) **/
+.sf-arrows .sf-with-ul {
+    padding-right: 2.5em;
+    *padding-right: 1em;
+ /* no CSS arrows for IE7 (lack pseudo-elements) */
+}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    margin-top: -3px;
+    height: 0;
+    width: 0;
+  /* order of following 3 rules important for fallbacks to work */
+    border: 5px solid transparent;
+    border-top-color: #202020;
+ /* edit this to suit design (no rgba in IE8) */
+    border-top-color: rgba(32,32,32,.5);
+}
+
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+    border-top-color: white;
+ /* IE8 fallback colour */
+}
+
+
+.wrap {
+    width: 50em;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.wrap {
+    padding: 1em;
+    height: auto;
+    min-height: 90%;
+}
+h1 {
+    font-size: 1.125em;
+}
+.sf-mega ul {
+    list-style: none;
+    padding: 0;
+}
+.sf-mega li {
+    margin-left: 0;
+    padding: 0.333em 1em;
+    border-bottom: 1px solid #D0D0D0;
+}
+.sf-mega a {
+    color: #585858;
+
+    &:hover {
+        color: #65AA00;
+    }
+}
+.sf-mega .tabular {
+    padding: 0.5em 1em;
+}
+.sf-mega h2 {
+    font-size: 1em;
+    margin: .5em 0 0;
+    color: #202020;
+    padding: 0 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:focus, a:hover, a:active {
+    text-decoration: none;
+}
+
